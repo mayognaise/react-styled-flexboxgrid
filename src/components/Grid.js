@@ -5,9 +5,8 @@ import styled, { css } from 'styled-components'
 import createProps from '../createProps'
 import config, { DIMENSION_NAMES } from '../config'
 
-const Grid = styled(props =>
-  React.createElement(props.tagName || 'div', createProps(Grid.PropTypes, props))
-)`
+const GridContents = React.createElement(props.tagName || 'div', createProps(Grid.PropTypes, props))
+const Grid = styled(GridContents)`
   margin-right: auto;
   margin-left: auto;
 
